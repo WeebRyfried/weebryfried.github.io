@@ -45,7 +45,7 @@
     "screenshot": "screenshot.png",
     "imageResize": true,
     "publishType": "local",
-    "publishPath": "@PROJECT_PATH@"
+    "publishPath": "file:///C:/Users/Ryfried/Documents"
   },
   "pages": {
     "index.html": {
