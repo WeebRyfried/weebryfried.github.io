@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
         <link rel="stylesheet" href="assets/css/smoothproducts.css">
 </head>
-<body class="m-auto" style="background-color: #134545; opacity: 0.5;">
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+<body class="m-auto" style="background-color: #134545;">
+    <nav id="nav" class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar" style="opacity: 0.5;">
         <div class="container"><a class="navbar-brand logo" href="index.html">WeebRyfried</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
@@ -36,3 +36,23 @@
 </head>
 </body>
 </html>
+
+<script>
+    function myFunction(x) {
+      // this area bro
+      var opacity = x.options[x.selectedIndex].text;
+      var el = document.getElementById("nav");
+      if (el.style.opacity !== undefined) {
+        el.style.opacity = opacity;
+      } else {
+        alert("Your browser doesn't support this example!");
+      }
+    }
+    </script>
+<select onchange="myFunction(this);" size="5">
+    <option>0
+    <option>0.2
+    <option>0.5
+    <option>0.8
+    <option selected="selected">1
+  </select>
