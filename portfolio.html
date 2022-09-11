@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="umm">
+    <meta name="author" content="Ryfried">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel = "icon" href = "Pictures/waifuicon.png" type = "image/x-icon">
+    <title>About</title>
+    <link rel="stylesheet" href="styleportfolio.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  </head>
+  <body style="background-color: black">
+    <nav>
+      <header>
+        <a href="index.html" class="logo">Ryfried</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+    </nav>
+    <section class="banner"></section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+
+    <section class="nav">
+      <h1>STUFF I'VE MADE</h1>
+      <h3 class="span loader">
+        <span class='m'>W</span>
+        <span class='m'>E</span>
+        <span class='m'>E</span>
+        <span class='m'>B</span>
+        <span class='m'>R</span>
+        <span class='m'>Y</span>
+        <span class='m'>F</span>
+        <span class='m'>R</span>
+        <span class='m'>I</span>
+        <span class='m'>E</span>
+        <span class='m'>D</span>
+      </h3>
+      <div class="nav-container">
+        <a class="nav-tab" href="#tab-db">MB™️</a>
+        <a class="nav-tab" href="#tab-gac">MCSMP</a>
+        <a class="nav-tab" href="#tab-ct">YTLUA</a>
+        <span class="nav-tab-slider"></span>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="slider" id="tab-db">
+        <a class="code" href="db.html"><h1>MineBot™️</h1></a>
+        <h2>A discord bot in Lua using Discordia API, multipurpose use and music player for Smug's Underground Discord Server.</h2>
+      </section>
+      <section class="slider" id="tab-gac">
+        <a class="code" ><h1>KorewaCraft / UnderCraft</h1></a>
+        <h2>A Minecraft Server from the KorewaCraft (was the server of an Anituber called KorewaEden). It was later rebranded to UnderCraft and was used for the Smug's Underground Discord Server after an incident occurred.</h2>
+      </section>
+      <section class="slider" id="tab-ct">
+        <a class="code" ><h1>YTLua</h1></a>
+        <h2>1-click YouTube videos downloader. All you have to do is copy the link and start the program. Can be used to loselessly download YouTube Music songs with its metadata intact.</h2>
+      </section>
+    </main>
+    <canvas class="background"></canvas>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script src="Javascripts/scriptportfolio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="MineBot Main">
+    <meta name="author" content="Ryfried">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel = "icon" href = "Pictures/waifuicon.png" type = "image/x-icon">
+    <title>Data</title>
+    <link rel="stylesheet" href="styledata.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+  </head>
+    <nav>
+      <header>
+        <a href="index.html" class="logo">Ryfried</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+    </nav>
+    <section class="banner"></section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><a href="PortfolioData/db1.png"><img src="PortfolioData/db1.png"></a></div>
+              <div class="swiper-slide"><a href="PortfolioData/db2.png"><img src="PortfolioData/db2.png"></a></div>
+              <div class="swiper-slide"><a href="PortfolioData/db3.png"><img src="PortfolioData/db3.png"></a></div>
+              <div class="swiper-slide"><a href="PortfolioData/db4.png"><img src="PortfolioData/db4.png"></a></div>
+              <div class="swiper-slide"><a href="PortfolioData/db5.png"><img src="PortfolioData/db5.png"></a></div>
+              <div class="swiper-slide"><a href="PortfolioData/db6.png"><img src="PortfolioData/db6.png"></a></div>
+              <div class="swiper-slide"><a href="PortfolioData/db7.png"><img src="PortfolioData/db7.png"></a></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        loop: true,
+      
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+      });</script>
+      <div class="description">
+          <h2 class="title">Description:</h2>
+          <p class="text">A Discord Bot coded in Lua and Discordia API. Very unstable bot but it got many useful features such as direct language translation, archive, music player, GPT3, and more...</p>
+      </div>
+      <div class="Commands">
+        <h2 class="title">Commands:</h2>
+        <p class="text">Will do this later.. cause theres too much of it</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="diesss">
+    <meta name="author" content="Ryfried">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel = "icon" href = "Pictures/waifuicon.png" type = "image/x-icon">
+    <title>Profiles</title>
+    <link rel="stylesheet" href="styleprofiles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <header>
+        <a href="index.html" class="logo">Ryfried</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+    </nav>
+    <section class="banner"></section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+    <section>
+      <video autoplay loop muted src="Videos/Swerved It (web).mp4" class="bc" id="my_video">LOADING</video>
+      <div class="icontainer" id="sound_button">
+        <div class="ibox">
+          <span style="--i:1;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:2;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:3;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:4;"><a>Weeb</a>Ryfr <a>ied</a></span>
+          <span style="--i:5;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:6;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:7;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:8;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:9;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:10;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:11;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:12;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:13;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:14;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:15;"><a>Weeb</a>Ryfr<a>ied</a></span>
+          <span style="--i:16;"><a>Weeb</a>Ryfr<a>ied</a></span>
+        </div>
+      </div>
+      <script>
+        var video = document.getElementById("my_video");
+        video.muted = true;
+        function mute() {
+        if (video.muted === false) {
+        video.muted = true;
+        }
+        else {
+        video.muted =
+        false;
+        }
+        }
+        document
+        .getElementById("sound_button")
+        .addEventListener("click", mute);
+      </script>
+      <div class="scroll-down"></div>
+    </section>
+    <section class="pcontainer" id="Discord">
+      <div class="divdesc1">
+        <img src="Pictures/discord.png">
+        <div>
+          <h1>Discord</h1>
+          <h4>Discord is the easiest way to talk over voice, video, and text. Talk, chat, hang out, and stay close with your friends and communities.</h4>
+        </div>
+      </div>
+      <div class="div1">
+        <div class="container">
+          <div class="card">
+            <div class="imgBx">
+              <img src="Pictures/draco.png">
+            </div>
+            <div class="contentBx">
+              <h2 id="copy1">WeebRyfried Elaina Arc X#2301</h2>
+              <div class="desc">
+                <h4>Main Discord account</h4>
+              </div>
+              <button id="copyButton1">Copy</button>
+
+              <script type="text/javascript">
+                function copy(copyId){
+                  var $inp=$("<input>");
+                  $("body").append($inp);
+                  $inp.val($(""+copyId).text()).select();
+                  document.execCommand("copy");
+                  $inp.remove();
+                  $(".alert").fadeIn(500,
+                      function(){$(".alert").fadeOut();
+                  });
+                }
+                $(document).ready(function(){
+                  $("#copyButton1").click(
+                    function(){
+                    copy('#copy1');
+                  });
+                  $("#copyButton2").click(
+                    function(){
+                    copy('#copy2');
+                  });
+                  $("#copyButton3").click(
+                    function(){
+                    copy('REDACTED');
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="imgBx">
+              <img src="Pictures/02.png">
+            </div>
+            <div class="contentBx">
+              <h2 id="copy2">Ex33#2001</h2>
+              <div class="desc">
+                <h4>alt acc</h4>
+              </div>
+              <button id="copyButton2">Copy</button>
+
+              <script type="text/javascript">
+              </script>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="imgBx">
+              <img src="Pictures/azryx.png">
+            </div>
+            <div class="contentBx">
+              <h2 id="copy3">█████#3232</h2>
+              <div class="desc">
+                <h4>████ █████████ ████ ████ ████ espionage purposes, ...</h4>
+              </div>
+              <button id="copyButton3">Blocked</button>
+
+              <script type="text/javascript">
+
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pcontainer" id="Spotify">
+      <div class="divdesc2">
+        <img src="Pictures/spotify.png">
+        <div>
+          <h1>Spotify</h1>
+          <h4>A digital music, podcast, and video service that gives you access to millions of songs and other content from creators all over the world.</h4>
+        </div>
+      </div>
+      <div class="div1">
+        <div class="vcard">
+          <div class="header">
+            <div class="wave_bg">
+              <div class="wave-01"></div>
+              <div class="wave-02"></div>
+              <div class="wave-03"></div>
+            </div>
+            <div class="profile_pic_content">
+              <img class="profile_pic" src="Pictures/draco.png">
+            </div>
+          </div>
+          <div class="card_content">
+            <div class="name">
+              <h4>Ryfried</h4>
+            </div>
+            <div class="info">
+              <h5>This is my Spotify account.<br> I don't use Spotify, usually I use YouTube Music.</h5>
+            </div>
+            <a class="spotbutton" href="https://open.spotify.com/user/u9p8dekmtenreu6nghkqld8qo" target="_blank">My Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pcontainer" id="Steam">
+      <div class="divdesc3">
+        <img src="Pictures/steam.png">
+        <div>
+          <h1>Steam</h1>
+          <h4>Steam is an internet-based digital distribution, digital rights management, multiplayer and social networking program developed and distributed by Valve.</h4>
+        </div>
+      </div>
+      <div class="div1">
+        <div class="box">
+          <a href="https://steamcommunity.com/profiles/76561198371885530" target="_blank">
+            <img src="https://avatars.akamai.steamstatic.com/e8a8f0449746ee39633e7ba39865a0b161f163f0_full.jpg">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="pcontainer" id="Youtube">
+      <div class="divdesc4">
+        <img src="Pictures/youtube.png">
+        <div>
+          <h1>Youtube Music</h1>
+          <h4>YouTube Music is a music streaming service developed by YouTube, a subsidiary of Google.</h4>
+        </div>
+      </div>
+      <div class="div1">
+        <div class="cardy" onclick="window.open('https://music.youtube.com/channel/UCg8Vo3q2E7OKfbi6PdKtigw', '_blank');">
+          <div class="cardyContentBefore">
+            <img src="https://yt3.ggpht.com/ytc/AMLnZu_PaNvjoW1xCRsnEx4ASOI2BysGzjDirRKlI_Ox4cM=w226-c-h226-k-c0x00ffffff-no-l90-rj">
+            <h2 class="cardyName">Ryfried</h2>
+            <img class="ytbbtn" src="Pictures/ytbbutton.png">
+            <h5>This is my YouTube Music account, you can check out my music playlist there.</h5>
+          </div>
+          <div class="cardyContentAfter">
+            Go To Channel 🡕
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pcontainer" id="MAL">
+      <div class="divdesc5">
+        <img src="Pictures/mal.png">
+        <div>
+          <h1>Anilist</h1>
+          <h4>AniList is a tool to track and record your progression in anime and manga, featuring multiple scoring types, list themes, a public API, and many community features such as live chat, following feeds, and forums.</h4>
+        </div>
+      </div>
+      <div class="div1">
+        <aside class="profile-card">
+          <div class="topper">
+            <a href="https://anilist.co/user/Ryfried/" target="_blank">
+              <img src="https://s4.anilist.co/file/anilistcdn/user/avatar/large/b207579-bIjiX7VVSKXz.jpg">
+            </a>
+            <h1>Ryfried</h1>
+            <h2>My Anime List</h2>
+          </div>
+          <div class="profile-bio">
+            <p>Here you have my Anilist profile which I use to find new anime to watch, and keep my list updated with what i've already watched and with what I am currently watching</p>          
+          </div>       
+        </aside>
+      </div>
+      <script  src="./script.js"></script>
+    </section>
+  </body>
+  <footer>
+    <p></p>
+  </footer>
+</html>
