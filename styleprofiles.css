@@ -109,7 +109,7 @@ header{
 }
 .icontainer .ibox span{
     position: absolute;
-    color: #fff;
+    color: #ffffff;
     font-size: 4.5em;
     white-space: nowrap;
     text-transform: uppercase;
@@ -123,11 +123,15 @@ header{
 }
 .icontainer .ibox span a:nth-child(1){
     font-style: initial;
-    color: #12b5ff;
+    color: #010066;
 }
 .icontainer .ibox span a:nth-child(2){
     font-style: initial;
-    color: #ff246f;
+    color: #CC0001;
+}
+.icontainer .ibox span a:nth-child(3){
+    font-style: initial;
+    color: #FFCC00;
 }
 section .scroll-down {
 	position: absolute;
