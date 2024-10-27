@@ -196,8 +196,34 @@ header.sticky ul li a{
 
 .audio-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Centers vertically */
   text-align: center;
+}
+
+.audio-container img {
+  width: 256px;
+  height: 256px;
+  margin-bottom: 20px; /* Space between image and audio player */
+}
+
+/* Layout for image and text side-by-side */
+.image-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Space between image-text and audio player */
+}
+/* Styling the image */
+.image-text img {
+  width: 256px;
+  height: 256px;
+  margin-right: 20px; /* Space between image and text */
+}
+/* Styling the text */
+.image-text p {
+  font-size: 1.2em;
+  max-width: 400px;
+  color: #ffffff;
 }
