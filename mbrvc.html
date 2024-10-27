@@ -11,17 +11,43 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     
   </head>
-    <nav>
-      <header>
-        <a href="index.html" class="logo">Ryfried | CAREERS</a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </header>
-    </nav>
+  <nav>
+    <header>
+     <a href="index.html" class="logo" data-sound="career-sound">Ryfried | CAREERS</a>
+      <ul>
+        <li><a href="index.html" data-sound="home-sound">Home</a></li>
+        <li><a href="about.html" data-sound="about-sound">About</a></li>
+        <li><a href="portfolio.html" data-sound="portfolio-sound">Portfolio</a></li>
+        <li><a href="contact.html" data-sound="contact-sound">Contact</a></li>
+        <li><a href="weeb.html" data-sound="weeb-sound">Weeb</a></li>
+      </ul>
+    </header>
+  </nav>
+
+
+  <!-- Sound effect audio files -->
+  <audio id="career-sound" src="sounds/career-sound.wav" preload="auto"></audio>
+  <audio id="home-sound" src="sounds/home-sound.wav" preload="auto"></audio>
+  <audio id="about-sound" src="sounds/about-sound.wav" preload="auto"></audio>
+  <audio id="portfolio-sound" src="sounds/portfolio-sound.wav" preload="auto"></audio>
+  <audio id="contact-sound" src="sounds/contact-sound.wav" preload="auto"></audio>
+  <audio id="weeb-sound" src="sounds/weeb-sound.wav" preload="auto"></audio>
+
+  <script>
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(link => {
+      link.addEventListener("mouseenter", () => {
+        const soundId = link.getAttribute("data-sound"); // Get the unique sound ID
+        const sound = document.getElementById(soundId);
+        if (sound) {
+          sound.currentTime = 0; // Reset audio to start
+          sound.play();
+        }
+      });
+    });
+  </script>
+
     <section class="banner"></section>
     <script type="text/javascript">
       window.addEventListener("scroll", function(){
