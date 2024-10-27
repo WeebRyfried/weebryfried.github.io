@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="MineBot Voice">
+    <meta name="author" content="Ryfried">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <link rel = "icon" href = "Pictures/waifuicon.png" type = "image/x-icon">
+    <title>Data</title>
+    <link rel="stylesheet" href="styledata.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+  </head>
+    <nav>
+      <header>
+        <a href="index.html" class="logo">Ryfried</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+    </nav>
+    <section class="banner"></section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><a href="mbrvc/rvc.jpg"><img src="mbrvc/rvc.jpg"></a></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        loop: true,
+      
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+      });</script>
+      <div class="description">
+          <h2 class="title">MineBot</h2>
+          <p class="text">MineBot is a Discord bot developed by me in Lua, Luvit and with the help of Discordia API. Though it is a very unstable bot due to most of it libraries being handwritten, it has many useful features and serves approximately 1200 users online.</p>
+      </div>
+      <div class="MineBot RVC">
+        <h2 class="title">MineBot RVC</h2>
+        <p class="text">RVC is a relatively new technology. It is able to convert any voice input by the user into other voices, as pre-trained, with natural-sounding voice and even mimicing the target voice's accents and prosody.</p>
+        <p class="text">RVC uses AI technology to synthesise voice conversion compared to traditional methods of just changing the pitch of the sound given, and/or add extra digital effects to it such as noise cancellation, echo, reverb, etc. RVC gives a more “natural” conversion of voices, even copying their accents and intonations.
+
+          <br>Please listen to the example below:
+        </p>
+
+        <div class="audio-container">
+          <audio controls>
+            <source src="example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+    </div>
+
+
+
+  </body>
+</html>

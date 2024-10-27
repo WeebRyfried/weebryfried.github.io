@@ -193,3 +193,11 @@ header.sticky ul li a{
 .download-btn:hover .top {
   margin-top: -50px;
 }
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centers vertically */
+  text-align: center;
+}
